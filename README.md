@@ -2,7 +2,7 @@
 Bu proje, bir kütüphanenin günlük işlemlerini otomatize etmek için geliştirilmiş bir uygulamadır. Kullanıcılar ve yöneticiler için ayrı giriş ekranları bulunmaktadır. Kullanıcılar, kitapları arayabilir, ödünç alabilir, iade edebilir ve kişisel bilgilerini güncelleyebilir veya hesaplarını silebilirler. Yöneticiler ise kullanıcıları ve kitapları yönetebilir, ödünç kitapları takip edebilir ve arşivleyebilirler.
 ## Uygulama Giriş Ekranı
 Bu ekranda Kullanıcı İşlemleri ve Yönetici İşlemleri olmak üzere iki buton vardır.
-[Uygulama Giriş Ekranı](https://r.resimlink.com/38FtDA4PzR.jpg)
+![Uygulama Giriş Ekranı](https://r.resimlink.com/38FtDA4PzR.jpg)
 ## Kullanıcı Giriş Ekranı
 Bu ekran, kullanıcıların sisteme giriş yapabilecekleri veya yeni hesap oluşturabilecekleri işlemleri içerir.
 
