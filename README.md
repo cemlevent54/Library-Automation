@@ -1,31 +1,29 @@
-# Library-Automation
- 
+# Kütüphane Otomasyonu
+Bu proje, bir kütüphanenin günlük işlemlerini otomatize etmek için geliştirilmiş bir uygulamadır. Kullanıcılar ve yöneticiler için ayrı giriş ekranları bulunmaktadır. Kullanıcılar, kitapları arayabilir, ödünç alabilir, iade edebilir ve kişisel bilgilerini güncelleyebilir veya hesaplarını silebilirler. Yöneticiler ise kullanıcıları ve kitapları yönetebilir, ödünç kitapları takip edebilir ve arşivleyebilirler.
 ## Uygulama Giriş Ekranı
 Bu ekranda Kullanıcı İşlemleri ve Yönetici İşlemleri olmak üzere iki buton vardır.
-
+[Uygulama Giriş Ekranı](https://r.resimlink.com/38FtDA4PzR.jpg)
 ## Kullanıcı Giriş Ekranı
-* Kullanıcı Giriş
-* Yeni Kullanıcı
+Bu ekran, kullanıcıların sisteme giriş yapabilecekleri veya yeni hesap oluşturabilecekleri işlemleri içerir.
 
 ### Kullanıcı İşlemleri
-* Kitap Arama
-* Ödünç Kitap Alma
-* Ödünç Kitap İade Etme
-* Kullanıcı Bilgi Güncellemesi
-* Kullanıcı Kaydını Silme
+* **Kitap Arama:** Kullanıcılar, kütüphanedeki kitapları aramak için bu işlemi kullanabilirler.Arama sonuçları, kitapların adı, yazarı, yayın tarihi vb. bilgileri içerir.
+* **Ödünç Kitap Alma:** Kullanıcılar, istedikleri kitabı ödünç alabilirler. Ödünç alınan kitaplar, kullanıcının hesabına eklenir ve belirli bir süre sonra iade edilmek üzere işaretlenir.
+* **Ödünç Kitap İade Etme:** Kullanıcılar, ödünç aldıkları kitapları iade edebilirler. İade edilen kitaplar, kullanıcının hesabından kaldırılır ve yeniden kütüphane envanterine eklenir.
+* **Kullanıcı Bilgi Güncellemesi:** Kullanıcılar, kişisel bilgilerini güncelleyebilirler. Bu işlem, kullanıcının adı, e-posta adresi, telefon numarası gibi bilgileri içerir.
+* **Kullanıcı Kaydını Silme:** Kullanıcılar, hesaplarını sistemden silebilirler. Bu işlem, kullanıcının tüm bilgilerini ve ödünç kitaplarını kalıcı olarak siler.
 
 ## Yönetici Giriş Ekranı
-* Yönetici Giriş
-* Yeni Yönetici
+Bu ekran, yöneticilerin sisteme giriş yapabilecekleri veya yeni yönetici hesapları oluşturabilecekleri işlemleri içerir.
 
 ### Yönetici İşlemleri
-* Kullanıcı Ekleme
-* Kullanıcı Silme
-* Kullanıcı Görüntüleme
-* Kitap Ekleme
-* Kitap Silme
-* Kitap Görüntüleme
-* Ödünç Kitap Takibi
-* Ödünç Kitap Arşivi
+* **Kullanıcı Ekleme:** Yöneticiler, yeni kullanıcı hesapları oluşturabilirler. Bu işlem, kullanıcının adı, e-posta adresi, şifre gibi bilgileri içerir.
+* **Kullanıcı Silme:** Yöneticiler, kullanıcı hesaplarını sistemden silebilirler.
+* **Kullanıcı Görüntüleme:** Yöneticiler, tüm kullanıcıların bilgilerini görüntüleyebilirler. Bu işlem, kütüphaneye kayıtlı tüm kullanıcıların listesini ve bunların kişisel bilgilerini içerir.
+* **Kitap Ekleme:** Yöneticiler, yeni kitaplar ekleyebilirler. Bu işlem, kitabın adı, yazarı, yayın tarihi, kategori gibi bilgileri içerir.
+* **Kitap Silme:** Yöneticiler, kütüphaneden kitapları silebilirler. Bu işlem, belirli bir kitabın kütüphane envanterinden kalıcı olarak kaldırılmasını sağlar.
+* **Kitap Görüntüleme:** Yöneticiler, mevcut kitapların listesini görüntüleyebilirler. Bu işlem, kütüphanede bulunan tüm kitapların listesini ve bunların detaylı bilgilerini içerir.
+* **Ödünç Kitap Takibi:** Yöneticiler, ödünç kitapların durumunu takip edebilirler. Bu işlem, kütüphanede bulunan tüm ödünç kitapların listesini ve kimin tarafından ödünç alındığını içerir.
+* **Ödünç Kitap Arşivi:** Yöneticiler, ödünç kitapların arşivini görüntüleyebilirler. Bu işlem, geçmişte iade edilmiş olan ödünç kitapların listesini içerir.
 
 
