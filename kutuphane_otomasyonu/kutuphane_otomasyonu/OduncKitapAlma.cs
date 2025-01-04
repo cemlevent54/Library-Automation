@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -20,9 +21,10 @@ namespace kutuphane_otomasyonu
             this.username=username;
         }
         private string username;
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0PCHDQV;Initial Catalog=kutuphaneVeritabani;Integrated Security=True;Encrypt=False");
+        
         KontrolEtmeFonksiyonlari.Kontrol kontrol = new KontrolEtmeFonksiyonlari.Kontrol();
-
+        public static string connectionString = ConfigurationManager.ConnectionStrings["kutuphane_otomasyonu.Properties.Settings.kutuphaneVeritabaniConnectionString"].ConnectionString;
+        SqlConnection baglanti = new SqlConnection(connectionString);
         private void OduncKitapAlma_Load(object sender, EventArgs e)
         {
             string sqlquery = "SELECT id AS 'Kitap ID',kitapAdi AS 'Kitap Adı', yazar AS 'Yazar' FROM kitapTablosu";

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace kutuphane_otomasyonu
 {
@@ -17,7 +18,8 @@ namespace kutuphane_otomasyonu
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0PCHDQV;Initial Catalog=kutuphaneVeritabani;Integrated Security=True;Encrypt=False");
+        public static string connectionString = ConfigurationManager.ConnectionStrings["kutuphane_otomasyonu.Properties.Settings.kutuphaneVeritabaniConnectionString"].ConnectionString;
+        SqlConnection baglanti = new SqlConnection(connectionString);
 
 
         private void btn_uyeOl_Click(object sender, EventArgs e)

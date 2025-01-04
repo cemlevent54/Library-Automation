@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace kutuphane_otomasyonu
 {
@@ -14,7 +15,8 @@ namespace kutuphane_otomasyonu
     {
         public class Kontrol
         {
-            SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0PCHDQV;Initial Catalog=kutuphaneVeritabani;Integrated Security=True;Encrypt=False");
+            public static string connectionString = ConfigurationManager.ConnectionStrings["kutuphane_otomasyonu.Properties.Settings.kutuphaneVeritabaniConnectionString"].ConnectionString;
+            SqlConnection baglanti = new SqlConnection(connectionString);
 
             public static bool IsValidEmail(string email)
             {

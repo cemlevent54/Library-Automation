@@ -24,7 +24,7 @@ namespace kutuphane_otomasyonu
 
 
 
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0PCHDQV;Initial Catalog=kutuphaneVeritabani;Integrated Security=True;Encrypt=False");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-5T6VOVK;Initial Catalog=kutuphaneVeritabani;Integrated Security=True;Encrypt=False");
         private kullanici_giris girisFormu;
         private kullanici_uyeOl uyeFormu;
 

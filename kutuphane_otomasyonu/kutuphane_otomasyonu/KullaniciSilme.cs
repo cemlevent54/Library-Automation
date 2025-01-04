@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -20,8 +21,8 @@ namespace kutuphane_otomasyonu
         }
 
         public string username;
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0PCHDQV;Initial Catalog=kutuphaneVeritabani;Integrated Security=True;Encrypt=False");
-
+        public static string connectionString = ConfigurationManager.ConnectionStrings["kutuphane_otomasyonu.Properties.Settings.kutuphaneVeritabaniConnectionString"].ConnectionString;
+        SqlConnection baglanti = new SqlConnection(connectionString);
         private void btn_kayitSil_Click(object sender, EventArgs e)
         {
             string kullaniciAdi = username;
